@@ -27,9 +27,7 @@
 
         .flex-container {
             display: flex;
-            background-color: #006A6A;
             justify-content: space-around;
-            padding: 20px;
         }
 
         .header-title {
@@ -44,6 +42,53 @@
             font-size: 20px;
             font-weight: 500;
             margin-bottom: 15px;
+        }
+
+        .col-1 {
+            background-color: #006A6A;
+            width: 50%;
+            padding: 20px;
+            color: #FFF;
+        }
+
+        .col-2 {
+            background-color: #009E9E;
+            width: 50%;
+            padding: 20px;
+            color: #FFF;
+        }
+
+        .subscriber-title {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 15px 32px;
+            color: #006A6A;
+            background-color: #CCCCCC;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #E9E9E9;
         }
     </style>
 
@@ -64,10 +109,20 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1 da linha 2
+            <div class="col-1">
+                <div class="subscriber-title">
+                    Assinatura mensal:
+                </div>
+                <div>
+                    <span class="price">R$ 99,99</span>
+                    <span class="month">por mês.</span>
+                </div>
+                <div>
+                    Cancele a qualquer momento.
+                </div>
+                <button class="button">Assine Agora</button>
             </div>
-            <div>
+            <div class="col-2">
                 Coluna 2 da linha 2
             </div>
         </div>
